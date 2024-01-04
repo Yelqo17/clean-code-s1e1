@@ -5,49 +5,49 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
+<body class="page">
   <div class="matrix">
-    <img src="./eisenhower-matrix.jpg">
+    <img src="./eisenhower-matrix.jpg" class="matrix__img">
     <a class="matrix__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </div>
   <div class="form">
     <p id="form__adder">
-      <label for="form__new-task">Add Item</label>
+      <label for="form__new-task" class="form__adder-label">Add Item</label>
       <div class="form__task-wrapper">
-        <input id="form__new-task"class="form__task" type="text">
-        <button>Add</button>
+        <input id="form__new-task" class="form__task form__input form__input-text" type="text">
+        <button class="form__button">Add</button>
       </div>
     </p>
-    <h3>Todo</h3>
-    <ul id="form__incompleted-list">
-      <li>
-        <input type="checkbox">
-        <label class="form__task">Pay Bills</label>
-        <input type="text" class="form__task">
-        <button class="form__edit-button">Edit</button>
-        <button class="form__delete-button">
-          <img src="./remove.svg">
+    <h3 class="form__title">Todo</h3>
+    <ul id="form__incompleted-list" class="form__list">
+      <li class="form__list-item">
+        <input class="form__input form__input-checkbox" type="checkbox">
+        <label class="form__task form__label">Pay Bills</label>
+        <input type="text" class="form__task form__input form__input-text">
+        <button class="form__edit-button form__button">Edit</button>
+        <button class="form__delete-button form__button">
+          <img src="./remove.svg" class="form__img">
         </button>
       </li>
-      <li class="form__incompleted-item">
-        <input type="checkbox">
-        <label class="form__task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="form__task">
-        <button class="form__edit-button">Save</button>
-        <button class="form__delete-button">
-          <img src="./remove.svg">
+      <li class="form__incompleted-item form__list-item">
+        <input class="form__input" type="checkbox">
+        <label class="form__task form__label">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="form__task form__input form__input-text">
+        <button class="form__edit-button form__button">Save</button>
+        <button class="form__delete-button form__button">
+          <img src="./remove.svg" class="form__img">
         </button>
       </li>
     </ul>
-    <h3>Completed</h3>
-    <ul id="form__completed-list">
-      <li>
-        <input type="checkbox" checked>
-        <label class="form__task">See the Doctor</label>
-        <input type="text" class="form__task">
-        <button class="form__edit-button">Edit</button>
-        <button class="form__delete-button">
-          <img src="./remove.svg">
+    <h3 class="form__title">Completed</h3>
+    <ul id="form__completed-list" class="form__list">
+      <li class="form__list-item">
+        <input class="form__input" type="checkbox" checked>
+        <label class="form__task form__label">See the Doctor</label>
+        <input type="text" class="form__task form__input form__input-text">
+        <button class="form__edit-button form__button">Edit</button>
+        <button class="form__delete-button form__button">
+          <img src="./remove.svg" class="form__img">
         </button>
       </li>
     </ul>

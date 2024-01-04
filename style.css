@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.matrix img {
+.matrix__img {
   width: 100%;
 }
-.matrix .matrix__link {
+.matrix__link {
   font-family: fantasy, cursive;
 }
 
@@ -35,17 +35,17 @@ body {
 .form__task-wrapper {
   display: flex;
 }
-ul {
+.form__list {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.form__list-item, .form__title {
   list-style:none;
 }
-input,button{
+.form__input,.form__button{
   outline:none;
 }
-button {
+.form__button {
   background: none;
   border: 0px;
   color: #888;
@@ -54,12 +54,12 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.form__button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="form__new-task"] {
+.form__title,
+.form__adder-label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -68,7 +68,7 @@ label[for="form__new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.form__input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -80,21 +80,21 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.form__input-text:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="form__new-task"] {
+.form__adder-label {
   display: block;
   margin: 0 0 20px;
 }
-input#form__new-task {
+#form__new-task {
   width: 318px;
 }
 
 /* Task list */
-li {
+.form__list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -102,47 +102,47 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.form__list-item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.form__list-item > .form__input-checkbox {
   margin: 0 10px;
 }
-li > label {
+.form__list-item > .form__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.form__list-item > .form__input-text {
   width: 226px
 }
-button.form__delete-button img {
+.form__button.form__delete-button .form__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.form__delete-button img:hover {
+.form__button.form__delete-button .form__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#form__completed-list label {
+#form__completed-list .form__task {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.form__list .form__list-item .form__input-text {
   display:none
 }
 
-ul li.form__incompleted-item input[type=text] {
+.form__list .form__list-item.form__incompleted-item .form__input-text {
   display:inline-block;
   width:224px
 }
 
-ul li.form__incompleted-item label {
+.form__list .form__list-item.form__incompleted-item .form__label {
   display:none;
 }
