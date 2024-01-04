@@ -36,14 +36,14 @@
   display: flex;
 }
 .form__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .form__list-item, .form__title {
-  list-style:none;
+  list-style: none;
 }
 .form__input,.form__button{
-  outline:none;
+  outline: none;
 }
 .form__button {
   background: none;
@@ -135,14 +135,14 @@
 
 /* Edit Task */
 .form__list .form__list-item .form__input-text {
-  display:none
+  display: none
 }
 
 .form__list .form__list-item.form__incompleted-item .form__input-text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .form__list .form__list-item.form__incompleted-item .form__label {
-  display:none;
+  display: none;
 }
