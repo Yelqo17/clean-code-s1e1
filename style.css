@@ -30,7 +30,7 @@
 .form__task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .form__task-wrapper {
   display: flex;
@@ -116,7 +116,7 @@
   width: 226px;
 }
 .form__list-item > .form__input-text {
-  width: 226px
+  width: 226px;
 }
 .form__button.form__delete-button .form__img {
   height: 2em;
@@ -129,18 +129,18 @@
 
 /* Completed */
 #form__completed-list .form__task {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .form__list .form__list-item .form__input-text {
-  display: none
+  display: none;
 }
 
 .form__list .form__list-item.form__incompleted-item .form__input-text {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .form__list .form__list-item.form__incompleted-item .form__label {
